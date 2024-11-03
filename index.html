@@ -1,34 +1,37 @@
 <html>
+
 <head>
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        c[a]('signal', (signal) => {
-          console.log("signal:", signal);
-          text = l.createTextNode("signal: " + JSON.stringify(signal));
-          p = l.createElement("p");
-          p.appendChild(text);
-          l.body.appendChild(p);
-        });
-        t=l.createElement(r);t.async=1;t.src="https://staging.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+      c[a]('signal', (signal) => {
+        console.log("signal:", signal);
+        text = l.createTextNode("signal: " + JSON.stringify(signal));
+        p = l.createElement("p");
+        p.appendChild(text);
+        l.body.appendChild(p);
+      });
+      t = l.createElement(r); t.async = 1; t.src = "https://staging.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", "l5bvvz4r9h");
-</script>
+  </script>
 </head>
+
 <body>
-<p>
-Hello World! v0.0.10 (Staging).
-</p>
+  <p>
+    Hello World! v0.0.10 (Staging).
+  </p>
 
-<ul>
-<li>https://www.clarity.ms/tag/</li>
-<li>https://staging.clarity.ms/tag/</li>
-</ul>
+  <ul>
+    <li>https://www.clarity.ms/tag/</li>
+    <li>https://staging.clarity.ms/tag/</li>
+  </ul>
 
-<ul>
-<li>l5bvvz4r9h</li>
-<li>b5iu9cpd75</li>
-<li>l7bnu3dy3c</li>
-</ul>
+  <ul>
+    <li>l5bvvz4r9h</li>
+    <li>b5iu9cpd75</li>
+    <li>l7bnu3dy3c</li>
+  </ul>
 </body>
+
 </html>
